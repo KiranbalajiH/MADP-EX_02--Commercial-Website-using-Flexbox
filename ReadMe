@@ -51,10 +51,509 @@ Deploy the website.
 Upload to GitHub Pages for free hosting.
 
 ## PROGRAM
+## index.html
+'''
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Awesome Gadget Store</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">ROYCE GADGETS</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" class="cart-icon">🛒 Cart (0)</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover the Latest Tech</h1>
+                <p>High-quality gadgets and accessories for every need.</p>
+                <a href="#products" class="button">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>Our Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-product-id="1">
+                    <img src="C:\Users\KiranBalaji\Desktop\SMART WATCH.jpg" alt="Smartwatch">
+                    <h3>Smartwatch X</h3>
+                    <p class="price">$99.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="2">
+                    <img src="C:\Users\KiranBalaji\Desktop\HEADPHNS.jpg" alt="Wireless Headphones">
+                    <h3>Wireless Headphones Pro</h3>
+                    <p class="price">$149.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="3">
+                    <img src="C:\Users\KiranBalaji\Desktop\SPEAKERS.webp" alt="Portable Speaker">
+                    <h3>Portable Bluetooth Speaker</h3>
+                    <p class="price">$59.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="4">
+                    <img src="C:\Users\KiranBalaji\Desktop\PAD.webp" alt="Tablet">
+                    <h3>Super Tab 10</h3>
+                    <p class="price">$299.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="5">
+                    <img src="C:\Users\KiranBalaji\Desktop\FITNESS.avif" alt="Fitness Tracker">
+                    <h3>Fitness Tracker Lite</h3>
+                    <p class="price">$39.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-product-id="6">
+                    <img src="C:\Users\KiranBalaji\Desktop\MOUSE.webp" alt="Mouse">
+                    <h3>Wireless Mouse</h3>
+                    <p class="price">$20.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-us-section">
+            <h2>About ROYCE GADGETS Store</h2>
+            <p>Welcome to Royce Gadget Store, your one-stop shop for the latest and greatest tech gadgets. We are passionate about providing high-quality products that enhance your digital lifestyle. Founded in 2020, our mission is to offer innovative and reliable gadgets at competitive prices, backed by excellent customer service.</p>
+            <p>Our team is dedicated to staying ahead of the curve, constantly sourcing new and exciting products to add to our collection. We believe that technology should be accessible to everyone, and we strive to make your shopping experience seamless and enjoyable.</p>
+            <h3>Our Values:</h3>
+            <ul>
+                <li><strong>Quality:</strong> We only offer products that meet our high standards.</li>
+                <li><strong>Innovation:</strong> We keep up with the latest technological advancements.</li>
+                <li><strong>Customer Satisfaction:</strong> Your happiness is our top priority.</li>
+                <li><strong>Affordability:</strong> We aim to provide great value for your money.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <address>
+                <strong>Awesome Gadget Store Headquarters</strong><br>
+                123 Tech Avenue<br>
+                Gadget City, 12345<br>
+                India
+            </address>
+            <p>Email: <a href="mailto:info@roycegadgetstore.com">info@roycegadgetstore.com</a></p>
+            <p>Phone: +91 9876543210</p>
+        </section>
+    </main>
+
+    <footer>
+       
+        <p>&copy; 2025 Royce Gadget Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
+'''
+
+## style.css
+'''
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: #ddd;
+        }
+
+        .cart-icon {
+            position: relative;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: #ff6f61;
+            color: white;
+            border-radius: 50%;
+            padding: 5px;
+            font-size: 0.8em;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 1;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 100px 0;
+            background-color: #f0f0f0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Products Section */
+        .products-section {
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .price {
+            color: #ff6f61;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .add-to-cart {
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #4cae4c;
+        }
+
+        /* About Us Section */
+        .about-us-section {
+            text-align: center;
+        }
+
+        .about-us-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-us-section p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-us-section h3 {
+            font-size: 1.6em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .about-us-section ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .about-us-section ul li {
+            padding: 8px 0;
+            border-bottom: 1px dotted #eee;
+        }
+
+        .about-us-section ul li:last-child {
+            border-bottom: none;
+        }
+
+        .about-us-section ul li strong {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-section p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .contact-section address {
+            font-style: normal;
+            line-height: 1.7;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .contact-section a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+        }
+
+        .social-links {
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-links img:hover {
+            opacity: 1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .hero {
+                padding: 80px 20px;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero p {
+                font-size: 1.1em;
+            }
+        }
+'''
+
+## script.js
+'''
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartIcon = document.querySelector('.cart-icon');
+            let cartItemCount = 0;
+
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    cartItemCount++;
+                    cartIcon.textContent = `🛒 Cart (${cartItemCount})`;
+                    const productCard = this.closest('.product-card');
+                    const productName = productCard.querySelector('h3').textContent;
+                    // In a real scenario, you would add this product to a more persistent cart
+                    console.log(`${productName} added to cart.`);
+                    // You could also provide visual feedback to the user here (e.g., a small notification)
+                });
+            });
+
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - document.querySelector('header').offsetHeight, // Adjust for fixed header height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+'''
 
 ## OUTPUT
-
+![alt text](<Screenshot 2025-05-01 143350-1.png>)
+![alt text](<Screenshot 2025-05-01 143358.png>)
+![alt text](<Screenshot 2025-05-01 143406.png>)
+![alt text](<Screenshot 2025-05-01 143412.png>)
+![alt text](<Screenshot 2025-05-01 143418.png>)
 
 ## RESULT
 The program for creating commercial website using CSS Flexbox is executed successfully.
